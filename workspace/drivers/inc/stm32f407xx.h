@@ -9,11 +9,11 @@
 #define INC_STM32F407XX_H_
 #include <stdint.h>
 #define __vo volatile
-#define FLASH_BASEADDR        (uint32_t) 0x08000000
-#define SRAM1_BASEADDR        (uint32_t)0x20000000
-#define SRAM2_BASEADDR                0x20001C00U
-#define ROM                       0x1FFF0000U
-#define RAM                   SRAM1_BASEADDR
+#define FLASH_BASEADDR             (uint32_t) 0x08000000
+#define SRAM1_BASEADDR             (uint32_t)0x20000000
+#define SRAM2_BASEADDR             0x20001C00U
+#define ROM                        0x1FFF0000U
+#define RAM                        SRAM1_BASEADDR
 
 
 #define PERIPH_BASE                   0x40000000U
@@ -37,12 +37,12 @@
 
 #define RCC_BASE                 (AHB1PERIPH_BASE + 0x3800)
 
-#define I2C1_BASE               (APB1PERIPH_BASE + 0x5400)
-#define I2C2_BASE               (APB1PERIPH_BASE + 0x5800)
-#define I2C3_BASE               (APB1PERIPH_BASE + 0x5C00)
+#define I2C1_BASE                (APB1PERIPH_BASE + 0x5400)
+#define I2C2_BASE                (APB1PERIPH_BASE + 0x5800)
+#define I2C3_BASE                (APB1PERIPH_BASE + 0x5C00)
 
-#define USART2_BASE               (APB1PERIPH_BASE + 0x4400)
-#define USART3_BASE               (APB1PERIPH_BASE + 0x4800)
+#define USART2_BASE              (APB1PERIPH_BASE + 0x4400)
+#define USART3_BASE              (APB1PERIPH_BASE + 0x4800)
 #define UART4_BASE               (APB1PERIPH_BASE + 0x4C00)
 #define UART5_BASE               (APB1PERIPH_BASE + 0x5000)
 
@@ -169,7 +169,7 @@ typedef struct {
 #define SYSSFG_PCLK_DI()  (RCC->APB2ENR&=~(1<<14))
 
 
-cccc
+
 
 
 
