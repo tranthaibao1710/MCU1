@@ -15,6 +15,12 @@
 #define ROM                        0x1FFF0000U
 #define RAM                        SRAM1_BASEADDR
 
+#define ENABLE       1 
+#define DISABLE      0 
+#define SET          ENABLE
+#define RESET          DISABLE
+#define GPIO_PIN_SET   SET
+#define GPIO_PIN_RESET   RESET
 
 #define PERIPH_BASE                   0x40000000U
 #define APB1PERIPH_BASE               PERIPH_BASE
@@ -127,8 +133,8 @@ typedef struct {
 
 #define USART1_PCLK_EN()   (RCC->APB2ENR|=(1<<4))
 #define USART6_PCLK_EN()   (RCC->APB2ENR|=(1<<5))
-#define USART2_PCLK_EN()    (RCC->APB1ENR|=(1<<17))
-#define USART3_PCLK_EN()    (RCC->APB1ENR|=(1<<18))
+#define USART2_PCLK_EN()   (RCC->APB1ENR|=(1<<17))
+#define USART3_PCLK_EN()   (RCC->APB1ENR|=(1<<18))
 #define UART4_PCLK_EN()    (RCC->APB1ENR|=(1<<19))
 #define UART5_PCLK_EN()    (RCC->APB1ENR|=(1<<20))
 
